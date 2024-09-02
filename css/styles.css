@@ -15,6 +15,13 @@
     letter-spacing: 2px;
 }
 
+.display-4 {
+    font-family: 'Agharti Bold Semi Wide', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
 
 /* Ajustar el alto de la sección de inicio */
 #inicio {
