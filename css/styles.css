@@ -1,5 +1,21 @@
 /* styles.css */
 
+@font-face {
+    font-family: 'Agharti Bold Semi Wide';
+    src: url('../fonts/AghartiFamilyTest-SemiWideBold-BF66722ee18752b.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Aplicar la fuente al logo */
+.navbar-brand {
+    font-family: 'Agharti Bold Semi Wide', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
 /* Ajustar el alto de la sección de inicio */
 #inicio {
     position: relative;
