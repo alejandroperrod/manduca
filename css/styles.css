@@ -33,6 +33,43 @@ section {
     object-fit: cover;
 }
 
+/* Estilos para la sección de redes sociales */
+#redes-sociales {
+    background-color: #333;
+}
+
+#redes-sociales h2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+#redes-sociales a {
+    transition: color 0.3s ease;
+}
+
+#redes-sociales a:hover {
+    color: #f8c146; /* Un color dorado para resaltar cuando se pasa el mouse */
+}
+
+
+/* Hacer que el iframe del mapa sea responsive */
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: 0;
+}
+
+
 /* Ajustes para el formulario de contacto */
 form .form-control {
     border-radius: 0;
