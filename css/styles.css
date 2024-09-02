@@ -7,6 +7,21 @@
     font-style: normal;
 }
 
+h2, h3 {
+    font-family: 'Agharti Bold Semi Wide', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #333; /* Ajusta el color según tus necesidades */
+}
+
+/* También podrías hacerlo para h1, h3, etc. si lo deseas */
+h1 {
+    font-family: 'Agharti Bold Semi Wide', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffffff; /* Ajusta el color según tus necesidades */
+}
+
 /* Aplicar la fuente al logo */
 .navbar-brand {
     font-family: 'Agharti Bold Semi Wide', sans-serif;
@@ -15,12 +30,19 @@
     letter-spacing: 2px;
 }
 
+/* Cambiar el color de fondo del navbar */
+.navbar {
+    background-color: #53b0ab !important;
+}
+
+
 .display-4 {
     font-family: 'Agharti Bold Semi Wide', sans-serif;
-    font-size: 4rem;
+    font-size: 8rem;
     font-weight: bold;
     letter-spacing: 2px;
 }
+
 
 
 /* Ajustar el alto de la sección de inicio */
@@ -56,6 +78,29 @@ section {
     object-fit: cover;
 }
 
+/* Estilo para el botón "Ver Menú" */
+.btn-primary {
+    background-color: #53b0ab;
+    border-color: #53b0ab;
+}
+
+.btn-primary:hover {
+    background-color: #45a098;
+    border-color: #45a098;
+}
+
+/* Estilo para el botón "Enviar" */
+.btn-secondary {
+    background-color: #47a8a4;
+    border-color: #47a8a4;
+}
+
+.btn-secondary:hover {
+    background-color: #3d918e;
+    border-color: #3d918e;
+}
+
+
 /* Estilos para la sección de redes sociales */
 #redes-sociales {
     background-color: #333;
@@ -66,12 +111,19 @@ section {
     font-weight: bold;
 }
 
+/* Estilo para los iconos de las redes sociales */
 #redes-sociales a {
     transition: color 0.3s ease;
+    color: white; /* Color por defecto de los iconos */
 }
 
 #redes-sociales a:hover {
-    color: #f8c146; /* Un color dorado para resaltar cuando se pasa el mouse */
+    color: #53b0ab; /* El mismo color que el navbar */
+}
+
+/* Ajustes adicionales para aumentar la especificidad si es necesario */
+#redes-sociales a:hover .fab {
+    color: #53b0ab !important;
 }
 
 
