@@ -65,7 +65,7 @@ h1 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.1); /* Puedes ajustar la opacidad para hacer más oscuro el fondo */
-    backdrop-filter: blur(8px); /* Aquí defines el nivel de difuminado */
+    backdrop-filter: blur(4px); /* Aquí defines el nivel de difuminado */
     z-index: -1;
 }
 
