@@ -29,7 +29,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+</head>
 
 </head>
     
@@ -45,18 +47,27 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="#inicio" data-en="Home" data-es="Inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
+                        <a class="nav-link" href="#sobre-nosotros" data-en="About Us" data-es="Sobre Nosotros">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#menu">Menú</a>
+                        <a class="nav-link" href="#menu" data-en="Menu" data-es="Menú">Menú</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
+                        <a class="nav-link" href="#contacto" data-en="Contact" data-es="Contacto">Contacto</a>
                     </li>
                 </ul>
+            </div>
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button onclick="setLanguage('es')">
+                    <img src="images/es.png" alt="Español" width="30" height="30">
+                </button>
+                <button onclick="setLanguage('en')">
+                    <img src="images/en.png" alt="English" width="30" height="30">
+                </button>
             </div>
         </div>
     </nav>
@@ -66,33 +77,33 @@
     <header id="inicio" class="vh-100 d-flex align-items-center">
         <div class="container text-center">
             <h1 class="display-4">manduca</h1>
-            <p class="lead">El nuevo bar en Jerez de la Frontera, donde los clásicos se encuentran con la modernidad.</p>
-            <a href="#menu" class="btn btn-primary btn-lg">Ver Menú</a>
+            <p class="lead" data-en="The new bar in Jerez de la Frontera, where classics meet modernity." data-es="El nuevo bar en Jerez de la Frontera, donde los clásicos se encuentran con la modernidad.">El nuevo bar en Jerez de la Frontera, donde los clásicos se encuentran con la modernidad.</p>
+            <a href="#menu" class="btn btn-primary btn-lg" data-en="View Menu" data-es="Ver Menú">Ver Menú</a>
         </div>
     </header>
 
     <!-- Sobre Nosotros -->
     <section id="sobre-nosotros" class="py-5 bg-white">
         <div class="container">
-            <h2 class="mb-4">Sobre Nosotros</h2>
-            <p>¡Ven y disfruta de la mejor experiencia gastronómica en Manduca!</p>
-            <p>🍽️ Descubre nuestras deliciosas tapas y platos únicos que harán las delicias de tu paladar viaje.</p>
-            <p>👉🏻 ¡Te esperamos para compartir momentos inolvidables con amigos y familia!</p>
+            <h2 class="mb-4" data-en="About Us" data-es="Sobre Nosotros">Sobre Nosotros</h2>
+            <p data-en="Come and enjoy the best gastronomic experience at Manduca!" data-es="¡Ven y disfruta de la mejor experiencia gastronómica en Manduca!">¡Ven y disfruta de la mejor experiencia gastronómica en Manduca!</p>
+            <p data-en="🍽️ Discover our delicious tapas and unique dishes that will delight your palate." data-es="🍽️ Descubre nuestras deliciosas tapas y platos únicos que harán las delicias de tu paladar viaje.">🍽️ Descubre nuestras deliciosas tapas y platos únicos que harán las delicias de tu paladar viaje.</p>
+            <p data-en="👉🏻 We look forward to sharing unforgettable moments with friends and family!" data-es="👉🏻 ¡Te esperamos para compartir momentos inolvidables con amigos y familia!">👉🏻 ¡Te esperamos para compartir momentos inolvidables con amigos y familia!</p>
         </div>
     </section>
 
-    <!-- Menú -->
+        <!-- Menú -->
     <section id="menu" class="py-5 bg-light">
         <div class="container">
-            <h2 class="mb-4">Nuestra carta</h2>
+            <h2 class="mb-4" data-en="Our Menu" data-es="Nuestra carta">Nuestra carta</h2>
             <div class="row">
                 <!-- Plato 1 -->
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
                         <img src="images/plato01.jpg" class="card-img-top" alt="Tosta de sardina ahumada y guacamole">
                         <div class="card-body">
-                            <h5 class="card-title">Tosta de sardina ahumada y guacamole</h5>
-                            <p class="card-text">Crujiente pan tostado cubierto con sardinas ahumadas de intenso sabor, acompañado de un cremoso guacamole casero. Un bocado lleno de contrastes.</p>
+                            <h5 class="card-title" data-en="Smoked Sardine Toast with Guacamole" data-es="Tosta de sardina ahumada y guacamole">Tosta de sardina ahumada y guacamole</h5>
+                            <p class="card-text" data-en="Crispy toasted bread topped with intensely flavored smoked sardines, accompanied by creamy homemade guacamole. A bite full of contrasts." data-es="Crujiente pan tostado cubierto con sardinas ahumadas de intenso sabor, acompañado de un cremoso guacamole casero. Un bocado lleno de contrastes.">Crujiente pan tostado cubierto con sardinas ahumadas de intenso sabor, acompañado de un cremoso guacamole casero. Un bocado lleno de contrastes.</p>
                         </div>
                     </div>
                 </div>
@@ -101,8 +112,8 @@
                     <div class="card h-100">
                         <img src="images/plato02.jpg" class="card-img-top" alt="Solomillo en salsa con patatas">
                         <div class="card-body">
-                            <h5 class="card-title">Solomillo en salsa con patatas</h5>
-                            <p class="card-text">Jugoso solomillo cocinado a la perfección, bañado en una rica salsa de la casa, acompañado de patatas doradas y crujientes. </p>
+                            <h5 class="card-title" data-en="Sirloin in Sauce with Potatoes" data-es="Solomillo en salsa con patatas">Solomillo en salsa con patatas</h5>
+                            <p class="card-text" data-en="Juicy sirloin cooked to perfection, bathed in a rich house sauce, accompanied by golden and crispy potatoes." data-es="Jugoso solomillo cocinado a la perfección, bañado en una rica salsa de la casa, acompañado de patatas doradas y crujientes.">Jugoso solomillo cocinado a la perfección, bañado en una rica salsa de la casa, acompañado de patatas doradas y crujientes.</p>
                         </div>
                     </div>
                 </div>
@@ -111,32 +122,44 @@
                     <div class="card h-100">
                         <img src="images/plato03.jpg" class="card-img-top" alt="Pata de pulpo">
                         <div class="card-body">
-                            <h5 class="card-title">Pata de pulpo</h5>
-                            <p class="card-text">Exquisita pata de pulpo a la parrilla, tierna por dentro y con un sutil toque crujiente por fuera. Servida con un aliño especial que realza su sabor marinero.</p>
+                            <h5 class="card-title" data-en="Octopus Leg" data-es="Pata de pulpo">Pata de pulpo</h5>
+                            <p class="card-text" data-en="Exquisite grilled octopus leg, tender inside and with a subtle crispy touch outside. Served with a special dressing that enhances its marine flavor." data-es="Exquisita pata de pulpo a la parrilla, tierna por dentro y con un sutil toque crujiente por fuera. Servida con un aliño especial que realza su sabor marinero.">Exquisita pata de pulpo a la parrilla, tierna por dentro y con un sutil toque crujiente por fuera. Servida con un aliño especial que realza su sabor marinero.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Plato 4 -->
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
-                        <img src="images/plato04.jpg" class="card-img-top" alt="Pata de pulpo">
+                        <img src="images/plato04.jpg" class="card-img-top" alt="Tartar de remolacha">
                         <div class="card-body">
-                            <h5 class="card-title">Tartar de remolacha</h5>
-                            <p class="card-text">Un giro fresco y vibrante al clásico tartar. Delicados dados de remolacha, marinados con un toque de cítricos y hierbas frescas, servidos sobre una base cremosa.</p>
+                            <h5 class="card-title" data-en="Beet Tartare" data-es="Tartar de remolacha">Tartar de remolacha</h5>
+                            <p class="card-text" data-en="A fresh and vibrant twist on the classic tartare. Delicate beet cubes, marinated with a touch of citrus and fresh herbs, served on a creamy base." data-es="Un giro fresco y vibrante al clásico tartar. Delicados dados de remolacha, marinados con un toque de cítricos y hierbas frescas, servidos sobre una base cremosa.">Un giro fresco y vibrante al clásico tartar. Delicados dados de remolacha, marinados con un toque de cítricos y hierbas frescas, servidos sobre una base cremosa.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Plato 5 -->
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
-                        <img src="images/plato05.jpg" class="card-img-top" alt="Pata de pulpo">
+                        <img src="images/plato05.jpg" class="card-img-top" alt="Revuelto de gambas y setas">
                         <div class="card-body">
-                            <h5 class="card-title">Revuelto de gambas y setas</h5>
-                            <p class="card-text">Un clásico irresistible. Huevos cremosos revueltos con jugosas gambas y setas salteadas, combinando sabores del mar y la tierra en un plato lleno de sencillez y tradición.</p>
+                            <h5 class="card-title" data-en="Scrambled Eggs with Shrimp and Mushrooms" data-es="Revuelto de gambas y setas">Revuelto de gambas y setas</h5>
+                            <p class="card-text" data-en="An irresistible classic. Creamy scrambled eggs with juicy shrimp and sautéed mushrooms, combining sea and land flavors in a dish full of simplicity and tradition." data-es="Un clásico irresistible. Huevos cremosos revueltos con jugosas gambas y setas salteadas, combinando sabores del mar y la tierra en un plato lleno de sencillez y tradición.">Un clásico irresistible. Huevos cremosos revueltos con jugosas gambas y setas salteadas, combinando sabores del mar y la tierra en un plato lleno de sencillez y tradición.</p>
+                        </div>
+                    </div>
+                </div> 
+                <!-- Plato 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/plato06.jpg" class="card-img-top" alt="Y mucho mas">
+                        <div class="card-body">
+                            <h5 class="card-title" data-en="Many more flavors await you!" data-es="¡Muchos más sabores te esperan!">¡Muchos más sabores te esperan!</h5>
+                            <p class="card-text" data-en="Our menu is packed with delights that will surprise you. From the most classic regional dishes to modern creations. Visit us and discover everything we have to offer. We can't wait to welcome you!" 
+                            data-es="Nuestra carta está llena de delicias que te sorprenderán. Desde los platos más clásicos de la región hasta creaciones modernas. Visitanos y descubre todo lo que tenemos para ofrecer. ¡Te esperamos con los brazos abiertos!">
+                            Nuestra carta está llena de delicias que te sorprenderán. Desde los platos más clásicos de la región hasta creaciones modernas. Visitanos y descubre todo lo que tenemos para ofrecer. ¡Te esperamos con los brazos abiertos!</p>
                         </div>
                     </div>
                 </div>
-                <!-- Agrega más platos según sea necesario -->
+                <!-- Add more dishes as needed -->
             </div>
         </div>
     </section>
@@ -144,32 +167,32 @@
     <!-- Contacto -->
     <section id="contacto" class="py-5 bg-white">
         <div class="container">
-            <h2 class="mb-4">Contacto</h2>
+            <h2 class="mb-4" data-en="Contact" data-es="Contacto">Contacto</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <p>Visítanos en Jerez de la Frontera o contáctanos para reservar una mesa.</p>
+                    <p data-en="Visit us in Jerez de la Frontera or contact us to reserve a table." data-es="Visítanos en Jerez de la Frontera o contáctanos para reservar una mesa.">Visítanos en Jerez de la Frontera o contáctanos para reservar una mesa.</p>
                     <ul class="list-unstyled">
-                        <li><strong>Dirección:</strong> C. Porvera, 11, 11403 Jerez de la Frontera, Cádiz, España</li>
-                        <li><strong>Teléfono:</strong>+34 692 212 281</li>
-                        <li><strong>Email:</strong>contacto@manduca.com</li>
+                        <li><strong data-en="Address:" data-es="Dirección:">Dirección:</strong> C. Porvera, 11, 11403 Jerez de la Frontera, Cádiz, España</li>
+                        <li><strong data-en="Phone:" data-es="Teléfono:">Teléfono:</strong> +34 692 212 281</li>
+                        <li><strong data-en="Email:" data-es="Email:">Email:</strong> contacto@manduca.com</li>
                     </ul>
                     <!-- Formulario de Contacto -->
                     <form>
                         <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre">
+                            <label for="nombre" class="form-label" data-en="Name" data-es="Nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre" data-en="Your Name" data-es="Tu Nombre">
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="email" placeholder="tuemail@ejemplo.com">
+                            <label for="email" class="form-label" data-en="Email" data-es="Correo Electrónico">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="tuemail@ejemplo.com" data-en="youremail@example.com" data-es="tuemail@ejemplo.com">
                         </div>
                         <div class="mb-3">
-                            <label for="mensaje" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="mensaje" rows="3" placeholder="Tu Mensaje"></textarea>
+                            <label for="mensaje" class="form-label" data-en="Message" data-es="Mensaje">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3" placeholder="Tu Mensaje" data-en="Your Message" data-es="Tu Mensaje"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="submit" class="btn btn-primary" data-en="Send" data-es="Enviar">Enviar</button>
                     </form>
-                </div>
+                </div>            
                 <div class="col-md-6">
                     <!-- Mapa de Google Maps -->
                     <div class="map-responsive">
@@ -219,5 +242,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
+    <script>
+        function setLanguage(language) {
+            document.querySelectorAll('[data-en]').forEach(element => {
+                element.textContent = element.getAttribute(`data-${language}`);
+            });
+        }
+
+        // Set default language to Spanish
+        // Set default language to the browser's language
+        const browserLanguage = navigator.language.startsWith('es') ? 'es' : 'en';
+        setLanguage(browserLanguage);
+    </script>
 </body>
 </html>
