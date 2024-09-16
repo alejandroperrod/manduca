@@ -1,16 +1,19 @@
 /* styles.css */
+@import url('colors.css');
 
 @font-face {
     font-family: 'Agharti Bold Semi Wide';
     src: url('../fonts/AghartiFamilyTest-SemiWideBold-BF66722ee18752b.otf') format('truetype');
     font-weight: bold;
-    font-style: normal;
+    font-style: normal;    
+    color: var(--text-color);
 }
 
 h2, h3 {
     font-family: 'Agharti Bold Semi Wide', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
+    color: var(--text-color);
 }
 
 /* También podrías hacerlo para h1, h3, etc. si lo deseas */
@@ -18,7 +21,7 @@ h1 {
     font-family: 'Agharti Bold Semi Wide', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
-    color: #ffffff; /* Ajusta el color según tus necesidades */
+    color: var(--h1-color); /* Ajusta el color según tus necesidades */    
 }
 
 /* Aplicar la fuente al logo */
@@ -26,12 +29,13 @@ h1 {
     font-family: 'Agharti Bold Semi Wide', sans-serif;
     font-size: 2rem;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 2px;    
+    color: var(--h1-color);
 }
 
 /* Cambiar el color de fondo del navbar */
 .navbar {
-    background-color: #53b0ab !important;
+    background-color: var(--bg-color) !important;
 }
 
 
@@ -52,7 +56,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--text-light-color);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
@@ -65,7 +69,7 @@ h1 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.1); /* Puedes ajustar la opacidad para hacer más oscuro el fondo */
-    backdrop-filter: blur(4px); /* Aquí defines el nivel de difuminado */
+    backdrop-filter: blur(6px); /* Aquí defines el nivel de difuminado */
     z-index: -1;
 }
 
@@ -88,50 +92,86 @@ section {
 
 /* Estilo para el botón "Ver Menú" */
 .btn-primary {
-    background-color: #53b0ab;
-    border-color: #53b0ab;
+    background-color: var(--bg-color);
+    border-color: var(--bg-color);
 }
 
-.btn-primary:hover {
-    background-color: #45a098;
-    border-color: #45a098;
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: var(--bg-color-2);
+    border-color: var(--bg-color-2);
+    --bs-btn-bg: var(--bg-color-2);
+    --bs-btn-border-color: var(--bg-color-2);
+    --bs-btn-hover-bg: var(--bg-color-2);
+    --bs-btn-hover-border-color: var(--bg-color-2);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-bg: var(--bg-color-4);
+    --bs-btn-active-border-color: var(--bg-color-4);
+    --bs-btn-disabled-bg: var(--bg-color-2);
+    --bs-btn-disabled-border-color: var(--bg-color-2);
 }
 
 /* Estilo para el botón "Enviar" */
 .btn-secondary {
-    background-color: #47a8a4;
-    border-color: #47a8a4;
+    background-color: var(--bg-color-3);
+    border-color: var(--bg-color-3);
 }
 
-.btn-secondary:hover {
-    background-color: #3d918e;
-    border-color: #3d918e;
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus  {
+    background-color: var(--bg-color-4);
+    border-color: var(--bg-color-4);
 }
 
+.img-fluid {
+    max-width: 15%; /* Make the image smaller */
+    height: auto;
+    position: relative;
+}
+
+.img-fluid-nav {
+    max-width: 8%; /* Make the image smaller */
+    height: auto;
+    position: relative;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 992px) {
+    .img-fluid {
+        max-width: 30%; /* Adjust the size for smaller screens */
+    }
+
+    .img-fluid-nav {
+        max-width: 20%; /* Make the image smaller */
+    }
+}
 
 /* Estilos para la sección de redes sociales */
 #redes-sociales {
-    background-color: #333;
+    background-color: var(--social-grey-color);
 }
 
 #redes-sociales h2 {
     font-family: 'Arial', sans-serif;
     font-weight: bold;
+    color: var(--text-light-color);
 }
 
 /* Estilo para los iconos de las redes sociales */
 #redes-sociales a {
     transition: color 0.3s ease;
-    color: white; /* Color por defecto de los iconos */
+    color: var(--text-light-color); /* Color por defecto de los iconos */
 }
 
 #redes-sociales a:hover {
-    color: #53b0ab; /* El mismo color que el navbar */
+    color: var(--text-light-color); /* El mismo color que el navbar */
 }
 
 /* Ajustes adicionales para aumentar la especificidad si es necesario */
 #redes-sociales a:hover .fab {
-    color: #53b0ab !important;
+    color: var(--text-light-color) !important;
 }
 
 

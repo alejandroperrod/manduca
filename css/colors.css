@@ -1,0 +1,28 @@
+/* 
+    Gray: #4f6371;
+    Main clear: #bfc298;
+    Second clear: #f6e6cc;
+    Red text: #b25e52;
+
+*/
+
+
+
+:root {
+    /* --bg-color: #53b0ab; 
+    --bg-color-2: #45a098;
+    --bg-color-3: #47a8a4;
+    --bg-color-4: #3d918e;     */
+
+    --bg-color: #bdbfa3; /* Dark background color for navbar */
+    --bg-color-2: #d1c8b1;
+    --bg-color-3: #e4d1b9;
+    --bg-color-4: #f6e6cc;    
+    --h1-color: #b25e52; /* White color for h1 */
+    --text-color: #4f6371; /* Default text color */
+    --btn-primary-bg: #53b0ab; /* Primary button background color */
+    --btn-primary-color: #f6e6cc; /* Primary button text color */
+    --bg-light-color: #f6e6cc; /* Light background color */
+    --text-light-color: #f6e6cc; /* White text color */
+    --social-grey-color: #4f6371; /* White text color */
+}
